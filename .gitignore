@@ -1,0 +1,20 @@
+# Binary tools (download separately)
+ALCOR_U2_MP_v20.09.16.00/
+ChipGenius_v4_21_0701/
+
+# Archives
+*.zip
+*.7z
+
+# Executables
+*.exe
+*.dll
+*.sys
+
+# Windows system files
+Thumbs.db
+desktop.ini
+*.lnk
+
+# Temp/chat files
+chat.txt
