@@ -71,7 +71,7 @@ USB controller and flash memory identification tool. Reads VID/PID, controller m
 Alcor Micro Mass Production tool for factory-level firmware flashing, bad block mapping, and partition formatting of USB drives using Alcor controllers.
 
 *   🔗 **Download from this repository:** [ALCOR_U2_MP_v20.09.16.00.rar](./ALCOR_U2_MP_v20.09.16.00.rar) (or via [GitHub Direct Link](https://github.com/j-a-y-e-s-h/USB-PenDrive-Repair/raw/main/ALCOR_U2_MP_v20.09.16.00.rar))
-*   🔗 **Official Mirror:** [AlcorMP v20.09.16.00 — usbdev.ru](http://www.usbdev.ru/files/alcormicro/alcormp/)
+*   🔗 **Official Mirror:** [AlcorMP v20.09.16.00 — usbdev.ru](https://www.usbdev.ru/files/alcor/alcormp/)
 
 > **Note:** All tool archives are password-protected. Extract with password: `usbdev.ru`
 
