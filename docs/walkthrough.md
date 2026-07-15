@@ -82,21 +82,34 @@ Every possible software configuration was exhausted:
 
 ---
 
-## Step 6: Backup of Files
-All files (rar archives, extracted diagnostic tools, scripts, and guides) were compiled and saved inside the desktop folder:
-* **Path:** `C:\Users\Admin\Desktop\PenDrive`
+## Step 6: Repository and Files Backup
+All files, including scripts, documentation, and the compressed diagnostic/repair tools, are tracked and saved in this repository folder:
+* **Repository Path:** `USB-PenDrive-Repair/`
+
+### Tool Downloads (Tracked in Git)
+*   **ChipGenius v4.21.0701:** [ChipGenius_v4_21_0701.rar](../ChipGenius_v4_21_0701.rar) (or via [GitHub Direct Link](https://github.com/j-a-y-e-s-h/USB-PenDrive-Repair/raw/main/ChipGenius_v4_21_0701.rar))
+*   **AlcorMP v20.09.16.00:** [ALCOR_U2_MP_v20.09.16.00.rar](../ALCOR_U2_MP_v20.09.16.00.rar) (or via [GitHub Direct Link](https://github.com/j-a-y-e-s-h/USB-PenDrive-Repair/raw/main/ALCOR_U2_MP_v20.09.16.00.rar))
+*   *Note:* Extraction password for both is **`usbdev.ru`**
 
 ### Folder Contents:
+```text
+USB-PenDrive-Repair/
+├── README.md                       # Main landing page & guides
+├── LICENSE                         # MIT License
+├── .gitignore                      # Excludes raw executables/binaries
+├── ALCOR_U2_MP_v20.09.16.00.rar   # AlcorMP tool archive
+├── ChipGenius_v4_21_0701.rar      # ChipGenius tool archive
+│
+├── docs/
+│   ├── USB_Repair_Summary.md       # Detailed technical documentation
+│   └── walkthrough.md              # This file (chronological history)
+│
+├── scripts/
+│   ├── Restore_USB_Drive.ps1       # PowerShell MBR recovery script
+│   ├── Restore_USB_Drive.bat       # Launcher for PS1 script
+│   └── Format_USB_Drive.bat        # Quick format script
+│
+└── screenshots/                    # Visual evidence of all repair attempts
+    └── *.png
 ```
-C:\Users\Admin\Desktop\PenDrive\
-├── USB_Repair_Summary.md          <-- Detailed technical documentation
-├── walkthrough.md                 <-- This file (chronological history)
-├── Restore_USB_Drive.ps1          <-- PowerShell script to zero MBR and repartition
-├── Restore_USB_Drive.bat          <-- Launcher for the PowerShell script
-├── Format_USB_Drive.bat           <-- Quick format batch script
-├── ChipGenius_v4_21_0701.rar      <-- ChipGenius archive (password: usbdev.ru)
-├── ChipGenius_v4_21_0701/         <-- Extracted ChipGenius folder
-├── ALCOR_U2_MP_v20.09.16.00.rar   <-- AlcorMP archive (password: usbdev.ru)
-├── ALCOR_U2_MP_v20.09.16.00/      <-- Extracted AlcorMP tool folder
-└── Screenshots/                   <-- All screenshots from repair sessions
-```
+*(Raw extracted directories containing `.exe` and `.dll` binaries are ignored to keep the repository clean, but the `.rar` archives are fully tracked and ready to extract.)*

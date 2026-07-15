@@ -77,18 +77,34 @@ Even tripling the power supply from 200mA to 900mA did not prevent the disconnec
 
 ---
 
-## 5. Directory Folder Structure
+## 5. Directory Folder Structure & Tools
+
+The diagnostic and repair tools are checked into the repository root as compressed `.rar` archives, making them immediately available.
+
+### Tracked Tool Archives
+*   **ChipGenius v4.21.0701:** [ChipGenius_v4_21_0701.rar](../ChipGenius_v4_21_0701.rar) (or via [GitHub Direct Link](https://github.com/j-a-y-e-s-h/USB-PenDrive-Repair/raw/main/ChipGenius_v4_21_0701.rar))
+*   **AlcorMP v20.09.16.00:** [ALCOR_U2_MP_v20.09.16.00.rar](../ALCOR_U2_MP_v20.09.16.00.rar) (or via [GitHub Direct Link](https://github.com/j-a-y-e-s-h/USB-PenDrive-Repair/raw/main/ALCOR_U2_MP_v20.09.16.00.rar))
+*   *Note:* Extraction password for both is **`usbdev.ru`**
+
+### Repository Directory Structure
 ```text
-C:\Users\Admin\Desktop\PenDrive\
-├── USB_Repair_Summary.md          <-- This detailed documentation file
-├── walkthrough.md                 <-- Chronological history of all attempts
-├── Restore_USB_Drive.ps1          <-- PowerShell script to zero MBR and repartition
-├── Restore_USB_Drive.bat          <-- Launcher for the PowerShell script
-├── Format_USB_Drive.bat           <-- Quick format batch script
-├── ChipGenius_v4_21_0701.rar      <-- ChipGenius archive (password: usbdev.ru)
-├── ChipGenius_v4_21_0701/         <-- Extracted ChipGenius folder
-├── ALCOR_U2_MP_v20.09.16.00.rar   <-- AlcorMP archive (password: usbdev.ru)
-├── ALCOR_U2_MP_v20.09.16.00/      <-- Extracted AlcorMP tool folder
-└── Screenshots/                   <-- All screenshots from repair sessions
+USB-PenDrive-Repair/
+├── README.md                       # Main landing page & guides
+├── LICENSE                         # MIT License
+├── .gitignore                      # Excludes raw executables/binaries
+├── ALCOR_U2_MP_v20.09.16.00.rar   # AlcorMP tool archive
+├── ChipGenius_v4_21_0701.rar      # ChipGenius tool archive
+│
+├── docs/
+│   ├── USB_Repair_Summary.md       # This file
+│   └── walkthrough.md              # Chronological history of all attempts
+│
+├── scripts/
+│   ├── Restore_USB_Drive.ps1       # PowerShell MBR recovery script
+│   ├── Restore_USB_Drive.bat       # Launcher for PS1 script
+│   └── Format_USB_Drive.bat        # Quick format script
+│
+└── screenshots/                    # Visual evidence of all repair attempts
+    └── *.png
 ```
-*(All archives can be extracted using the password: **`usbdev.ru`**)*
+*(Extracted tool folders containing raw `.exe` and `.dll` files are ignored by git to keep files clean and secure, but the `.rar` archives are fully tracked.)*

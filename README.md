@@ -57,21 +57,23 @@ A complete diagnostic and repair toolkit for corrupted USB flash drives using **
 
 > **Key Finding:** Connection stability decreased over time (33min → 13min → 11min), indicating progressive hardware degradation regardless of power settings.
 
----
-
 ## 🛠️ Tools Included
+
+Both diagnostic and repair tools are available directly in this repository as password-protected `.rar` archives (extract with password: `usbdev.ru`).
 
 ### ChipGenius v4.21.0701
 USB controller and flash memory identification tool. Reads VID/PID, controller model, NAND flash type, and firmware version directly from the hardware.
 
-🔗 **Download:** [ChipGenius v4.21.0701 — chipgenius.en.lo4d.com](https://chipgenius.en.lo4d.com/windows)
+*   🔗 **Download from this repository:** [ChipGenius_v4_21_0701.rar](./ChipGenius_v4_21_0701.rar) (or via [GitHub Direct Link](https://github.com/j-a-y-e-s-h/USB-PenDrive-Repair/raw/main/ChipGenius_v4_21_0701.rar))
+*   🔗 **Official Mirror:** [ChipGenius v4.21.0701 — chipgenius.en.lo4d.com](https://chipgenius.en.lo4d.com/windows)
 
 ### AlcorMP v20.09.16.00
 Alcor Micro Mass Production tool for factory-level firmware flashing, bad block mapping, and partition formatting of USB drives using Alcor controllers.
 
-🔗 **Download:** [AlcorMP v20.09.16.00 — usbdev.ru](http://www.usbdev.ru/files/alcormicro/alcormp/)
+*   🔗 **Download from this repository:** [ALCOR_U2_MP_v20.09.16.00.rar](./ALCOR_U2_MP_v20.09.16.00.rar) (or via [GitHub Direct Link](https://github.com/j-a-y-e-s-h/USB-PenDrive-Repair/raw/main/ALCOR_U2_MP_v20.09.16.00.rar))
+*   🔗 **Official Mirror:** [AlcorMP v20.09.16.00 — usbdev.ru](http://www.usbdev.ru/files/alcormicro/alcormp/)
 
-> **Note:** Tool archives are password-protected. Extract with password: `usbdev.ru`
+> **Note:** All tool archives are password-protected. Extract with password: `usbdev.ru`
 
 ---
 
@@ -118,7 +120,9 @@ Quick format script using `format /X` (force dismount) for drives that are acces
 USB-PenDrive-Repair/
 ├── README.md                       # This file
 ├── LICENSE                         # MIT License
-├── .gitignore                      # Excludes binaries and large files
+├── .gitignore                      # Excludes raw executables/binaries
+├── ALCOR_U2_MP_v20.09.16.00.rar   # Tool archive (tracked in Git)
+├── ChipGenius_v4_21_0701.rar      # Tool archive (tracked in Git)
 │
 ├── docs/
 │   ├── USB_Repair_Summary.md       # Detailed technical documentation
@@ -129,15 +133,11 @@ USB-PenDrive-Repair/
 │   ├── Restore_USB_Drive.bat       # Launcher for PS1 script
 │   └── Format_USB_Drive.bat        # Quick format script
 │
-├── screenshots/                    # Visual evidence of all repair attempts
-│   └── *.png
-│
-└── tools/                          # (Not tracked in git — download separately)
-    ├── ALCOR_U2_MP_v20.09.16.00/   # AlcorMP Mass Production tool
-    └── ChipGenius_v4_21_0701/      # USB chip identification tool
+└── screenshots/                    # Visual evidence of all repair attempts
+    └── *.png
 ```
 
-> **Note:** Binary tools and `.rar` archives are excluded from git via `.gitignore`. Download them separately from [usbdev.ru](http://usbdev.ru) if needed.
+> **Note:** Extracted tool folders (containing `.exe` and `.dll` binaries) are excluded from git via `.gitignore`. You can extract the tracked `.rar` files in the repository root directory to use the tools.
 
 ---
 
